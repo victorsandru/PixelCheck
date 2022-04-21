@@ -1,6 +1,3 @@
-// Victor Sandru
-// 101231111
-
 import java.util.Deque;
 import java.util.ArrayDeque;
 
