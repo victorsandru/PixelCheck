@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19b95134-1a7f-4779-b1d3-219e9357e279" name="Changes" comment="" />
+    <list default="true" id="19b95134-1a7f-4779-b1d3-219e9357e279" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/imageDisplayExample.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Image.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyBlobs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyBlobs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SampleRun.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,9 +39,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
