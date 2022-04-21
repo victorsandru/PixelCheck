@@ -1,4 +1,21 @@
 # PixelCheck
+## Installation
+This project uses Java 17.0.1, you can find your system download [here](https://www.oracle.com/java/technologies/downloads/).
+
+You can install this repo using git. You can install it [here](https://git-scm.com/downloads).
+
+To start, create a folder to store the files. Afterwards in your chosen folder, open your console and use this command:
+
+```
+git clone https://github.com/victorsandru/PixelCheck.git
+```
+Here is an example: <br/>
+![gif of how to install repo](/docs/clone.gif)
+
+
+Use your favourite IDE to then run either the SampleRunIterative class or SampleRunRecursive class. These classes are under src/test/java.
+
+
 ## What does it do?
 Creates an Image object. An image object consists of a 2d grid of Pixel objects. These Pixel objects location is specified by their respective row and column in the image. The Pixels can also be have "ink" in them. Meaning that you can see the pixel.
 
