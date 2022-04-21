@@ -40,3 +40,6 @@ In the image display, all pixels in the given blob will be marked with numbers. 
 ![image display placement](/docs/imageDisplayExample.png)
 <br/>
 Here the original pixel starts at the first row, and second column. Since this pixel is in a blob, the array of all pixels in the blob is displayed. Afterwards the image is displayed with the algorithms walking path.
+
+## References
+The skeleton code for this assignment was written by Prof. Jason Hinek of Carleton University.
