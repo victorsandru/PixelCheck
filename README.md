@@ -4,3 +4,4 @@ Creates an Image object. An image object consists of a 2d grid of Pixel objects.
 
 In the Object, there can be 'blobs' of ink. The blob object represents where one or more pixels have ink and are immediate neighbours in the image. Immediate neighbours are only pixels that have other pixels either horizontally or vertically and have ink. Diagonals do not apply.
 
+Here is an example: [alt text](https://github.com/victorsandru/PixelCheck/blob/main/pixelPlacementExample.png?raw=true)
