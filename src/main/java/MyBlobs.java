@@ -4,29 +4,18 @@
 import java.util.Deque;
 import java.util.ArrayDeque;
 
-/* -----------------------------------------
-   Note: The ArrayDeque is an implementation 
-         of the Deque ADT. That is, it is a 
-		 double-ended queue. 
-
-		 You can simulate both a Stack and 
-		 a regular Queue with this data structure
-		 in the following way:
-
-		 Stack: push  ~ addFirst
-		        pop   ~ removeFirst
-		
-		 Queue: enqueue ~ addLast
-		        dequeue ~ removeFirst
-  ------------------------------------------ */
 
 public class MyBlobs extends Blobs{
 
-	// do NOT change or remove this constructor. We will use it to create 
-	// objects when testing your code. If it is removed, we cannot test 
-	// your code!
 	public MyBlobs(){}
-	
+
+	/** Helper method for the blobRecursive method. Recursively identifies all pixels in a given blob of ink.
+	 *
+	 * @param row row that pixel is in
+	 * @param col column that pixel is in
+	 * @param blobSoFar  A deque of pixels that the algorithm has visited already. Start with empty first.
+	 * @return
+	 */
 	@Override
 	public void blobRecursiveHelper(int row, int col, Deque<Pixel> blobSoFar){
 
@@ -36,19 +25,15 @@ public class MyBlobs extends Blobs{
 			current.setVisited(true);
 			blobSoFar.addLast(current);
 
-			// check if pixel to up is greater than 0(row--)
 			if(current.getRow() - 1 >= 0){
 				blobRecursiveHelper(row - 1, col, blobSoFar);
 			}
-			// check if pixel right is greater than 0 (column++)
 			if(current.getCol() + 1 < image.cols){
 				blobRecursiveHelper(row, col + 1, blobSoFar);
 			}
-			// check if pixel down is greater than 0 (row++)
 			if(current.getRow() + 1 < image.rows){
 				blobRecursiveHelper(row + 1, col, blobSoFar);
 			}
-			//check if pixel left is greater than 0 (column--)
 			if(current.getCol() - 1 >= 0){
 				blobRecursiveHelper(row, col - 1, blobSoFar);
 			}
@@ -56,7 +41,12 @@ public class MyBlobs extends Blobs{
 		} else return;
 	}
 
-	//queue 
+	/** Iteratively identifies all pixels in a given blob of ink.
+	 *
+	 * @param row row that pixel is in.
+	 * @param col column that pixel is in.
+	 * @return A deque with Pixel objects. Pixel objects are all the pixels in the given blob of ink.
+	 */
 	@Override
 	public Deque<Pixel> blobIterative(int row, int col){
 		ArrayDeque<Pixel> blobList = new ArrayDeque<>();

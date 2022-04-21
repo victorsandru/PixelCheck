@@ -78,7 +78,7 @@ public class Image{
 	  	                                                                           {12,14}, {12,15}, {12,16}, {12,17}
 	};
 	public static Image makeTestImage(){
-		int rows=80, cols=80;
+		int rows=20, cols=21;
 		Image img = new Image(rows, cols);
 		for(int row=0; row<rows; row+=1){
 			for(int col=0; col<cols; col+=1){
