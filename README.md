@@ -2,7 +2,7 @@
 ## Introduction
 This project is originally a school assignment from COMP1006.
 
-The objective is to create an algorithm in Java that finds connecting squares when given a set of coordinates.
+The objective is to create two algorithms that finds connecting squares when given a set of coordinates. There is either a iterative option or recursive algorithm to choose from. 
 ## Installation
 This project uses Java 17.0.1, you can find your system download [here](https://www.oracle.com/java/technologies/downloads/).
 
@@ -39,6 +39,9 @@ When the algorithm is run, it will return an array of coordinates of all pixels 
 <!-- There are two different algorithms to find all the pixels in a given blob. I have implemented both a recursive and a iterative method. -->
 ## Starting the search
 
+Choose to either use the recursive or iterative algorithm. Both algorithms will return the same results. Only difference between the two is of course it's methodology but also its path. The recursive algorithm is based upon a Depth-first Search algorithm, while the iterative is based on a Breadth-first Search.
+
+
 After installing the required files, run the SampleRun(iterative or recursion) class. This class will start the explore algorithm at the inputted coordinates.
 
 An array of coordinates will be returned and outputted to console. These coordinates are all of the pixels within the same blob as the inputted pixel. If the array is empty, then there is no ink at the given coordinate.
@@ -51,13 +54,12 @@ As mentioned prior, the grid will be printed onto console along with an array of
 <br/>
 ![image display placement](/docs/imageDisplayExample.png)
 <br/>
+
 The start location starts at the first row, and second column. Since this specifed pixel has ink, it will start the explore algorithm. Within the returned array, the walking path of the algorithm will display in order. The order will also show in the grid, where the path is specififed with it's respective number.
 <!-- 
 Here the original pixel starts at the first row, and second column. Since this pixel is in a blob, the array of all pixels in the blob is displayed. Afterwards the image is displayed with the algorithms walking path. -->
 
 ## Editing Parameters
 To change where the algorithms start, head to line 19 of the SampleRun (iterative or recursion) class. Here you can specify where the explore algorithm starts.
-
-# Algorithm Pseudocode
 # References
 The skeleton code for this assignment was written by Prof. Jason Hinek of Carleton University.
