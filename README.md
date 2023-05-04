@@ -1,7 +1,5 @@
 # PixelCheck
 ## Introduction
-This project is originally a school assignment from COMP1006.
-
 The objective is to create two algorithms that finds connecting squares when given a set of coordinates. There is either a iterative option or recursive algorithm to choose from. 
 ## Installation
 This project uses Java 17.0.1, you can find your system download [here](https://www.oracle.com/java/technologies/downloads/).
